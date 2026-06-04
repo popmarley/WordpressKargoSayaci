@@ -1,0 +1,186 @@
+.kargo-sayaci {
+    --kargo-bg: #c6623f;
+    --kargo-logo-bg: #ffffff;
+    --kargo-text: #111111;
+    --kargo-accent: #111111;
+    --kargo-today: #c6623f;
+    --kargo-card-bg: #fff7f1;
+    --kargo-body-bg: #fffaf6;
+    --kargo-border: #c6623f;
+    --kargo-delivery-label: #5f514b;
+    --kargo-delivery-value: #111111;
+    display: none;
+    width: 100%;
+    max-width: 530px;
+    margin: 18px 0 22px;
+    overflow: hidden;
+    border: 1px solid var(--kargo-border);
+    border-radius: 8px;
+    background: var(--kargo-card-bg);
+    color: var(--kargo-text);
+    box-shadow: 0 8px 20px rgba(198, 98, 63, 0.12);
+    box-sizing: border-box;
+}
+
+.kargo-sayaci[style*="display: block"],
+.kargo-sayaci[style*="display: flex"],
+.kargo-sayaci[style*="display: grid"] {
+    display: block !important;
+}
+
+.kargo-sayaci__lead {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-height: 38px;
+    padding: 10px 14px;
+    border-bottom: 1px solid color-mix(in srgb, var(--kargo-border) 22%, transparent);
+    background: var(--kargo-card-bg);
+    color: var(--kargo-text);
+    box-sizing: border-box;
+}
+
+.kargo-sayaci__lead-icon {
+    width: 17px;
+    height: 17px;
+    flex: 0 0 auto;
+    color: var(--kargo-bg);
+    fill: currentColor;
+}
+
+.kargo-sayaci__text {
+    min-width: 0;
+    color: var(--kargo-text);
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.28;
+    white-space: normal;
+    overflow-wrap: anywhere;
+}
+
+.kargo-sayaci__countdown-text,
+.kargo-sayaci__text strong {
+    color: var(--kargo-accent);
+    font-weight: 800;
+}
+
+.kargo-sayaci__body {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 12px 14px;
+    background: var(--kargo-body-bg);
+    box-sizing: border-box;
+}
+
+.kargo-sayaci__brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 92px;
+    min-width: 92px;
+    height: 38px;
+    padding: 6px 8px;
+    border: 1px solid color-mix(in srgb, var(--kargo-border) 18%, transparent);
+    border-radius: 6px;
+    background: var(--kargo-logo-bg);
+    box-sizing: border-box;
+}
+
+.kargo-sayaci__brand img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    max-height: 26px;
+    object-fit: contain;
+}
+
+.kargo-sayaci__delivery {
+    display: flex;
+    align-items: center;
+    min-width: 0;
+    color: var(--kargo-text);
+}
+
+.kargo-sayaci__delivery-content {
+    display: grid;
+    gap: 3px;
+    min-width: 0;
+}
+
+.kargo-sayaci__delivery-title {
+    color: var(--kargo-delivery-label);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.15;
+}
+
+.kargo-sayaci__delivery-value {
+    color: var(--kargo-delivery-value);
+    font-size: 15px;
+    font-weight: 800;
+    line-height: 1.2;
+    overflow-wrap: anywhere;
+}
+
+/* Eski kutulu DOM cache'den gelirse kart bozulmasın. */
+.kargo-sayaci__timer {
+    display: none !important;
+}
+
+.kargo-sayaci__timer + .kargo-sayaci__text {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    min-height: 38px;
+    padding: 10px 14px;
+    border-bottom: 1px solid color-mix(in srgb, var(--kargo-border) 22%, transparent);
+    background: var(--kargo-card-bg);
+    color: var(--kargo-text);
+}
+
+.kargo-sayaci__today {
+    color: var(--kargo-today);
+    font-weight: 900;
+}
+
+.kargo-sayaci__delivery img {
+    display: block;
+    width: 92px;
+    max-height: 38px;
+    object-fit: contain;
+}
+
+@media (max-width: 480px) {
+    .kargo-sayaci {
+        max-width: 100%;
+        margin: 16px 0 20px;
+    }
+
+    .kargo-sayaci__lead {
+        padding: 10px 12px;
+    }
+
+    .kargo-sayaci__text {
+        font-size: 12px;
+    }
+
+    .kargo-sayaci__body {
+        gap: 10px;
+        padding: 11px 12px;
+    }
+
+    .kargo-sayaci__brand {
+        width: 82px;
+        min-width: 82px;
+        height: 36px;
+    }
+
+    .kargo-sayaci__delivery-title {
+        font-size: 11px;
+    }
+
+    .kargo-sayaci__delivery-value {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,312 @@
+.kargo-sayaci-admin {
+    max-width: 1180px;
+}
+
+.kargo-sayaci-admin__header {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin: 18px 0 24px;
+}
+
+.kargo-sayaci-admin__header h1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 0 8px;
+}
+
+.kargo-sayaci-admin__header h1 span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 58px;
+    padding: 4px 10px;
+    border-radius: 999px;
+    background: #111827;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.kargo-sayaci-admin__header p {
+    margin: 0;
+    color: #4b5563;
+}
+
+.kargo-sayaci-admin__logo {
+    width: 64px;
+    height: 64px;
+    border-radius: 16px;
+    object-fit: contain;
+    background: #ffffff;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+.kargo-sayaci-admin__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.kargo-sayaci-admin__card {
+    background: #ffffff;
+    border: 1px solid #dcdcde;
+    border-radius: 14px;
+    padding: 22px;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
+}
+
+.kargo-sayaci-admin__card h2 {
+    margin-top: 0;
+}
+
+.kargo-sayaci-admin__card--wide {
+    margin-bottom: 20px;
+}
+
+.kargo-sayaci-admin__field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 18px;
+}
+
+.kargo-sayaci-admin__field:last-child {
+    margin-bottom: 0;
+}
+
+.kargo-sayaci-admin__checkbox {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 500;
+}
+
+.kargo-sayaci-admin__colors {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 14px;
+}
+
+.kargo-sayaci-admin__product-select {
+    width: 100%;
+    max-width: 100%;
+}
+
+.kargo-sayaci-admin .select2-container {
+    max-width: 100%;
+}
+
+.kargo-sayaci-preview__toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    align-items: flex-end;
+    margin-bottom: 16px;
+}
+
+.kargo-sayaci-preview__toolbar .kargo-sayaci-admin__field {
+    margin-bottom: 0;
+    min-width: 180px;
+}
+
+.kargo-sayaci-preview__toolbar .description {
+    margin: 0;
+    max-width: 420px;
+}
+
+.kargo-sayaci-admin__table-wrap {
+    overflow-x: auto;
+}
+
+.kargo-sayaci-admin__table th,
+.kargo-sayaci-admin__table td {
+    vertical-align: middle;
+}
+
+.kargo-sayaci-admin__table input[type="time"] {
+    min-width: 120px;
+}
+
+.kargo-sayaci-admin__date-time {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.kargo-sayaci-admin__date-time input[type="date"] {
+    min-width: 150px;
+}
+
+.kargo-sayaci-admin__date-time input[type="time"] {
+    min-width: 112px;
+}
+
+.kargo-sayaci-preview {
+    --kargo-bg: #c6623f;
+    --kargo-logo-bg: #ffffff;
+    --kargo-text: #111111;
+    --kargo-accent: #111111;
+    --kargo-today: #c6623f;
+    --kargo-card-bg: #fff7f1;
+    --kargo-body-bg: #fffaf6;
+    --kargo-border: #c6623f;
+    --kargo-delivery-label: #5f514b;
+    --kargo-delivery-value: #111111;
+    display: grid;
+    gap: 16px;
+    padding: 18px;
+    border-radius: 16px;
+    background: #f8fafc;
+    border: 1px dashed #cbd5e1;
+}
+
+.kargo-sayaci-preview__summary {
+    display: grid;
+    gap: 6px;
+}
+
+.kargo-sayaci-preview__status,
+.kargo-sayaci-preview__meta {
+    margin: 0;
+}
+
+.kargo-sayaci-preview__status {
+    display: inline-flex;
+    align-items: center;
+    width: fit-content;
+    min-height: 30px;
+    padding: 0 12px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 700;
+    background: #dcfce7;
+    color: #166534;
+}
+
+.kargo-sayaci-preview__status.is-warning {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.kargo-sayaci-preview__meta {
+    color: #475569;
+    font-size: 13px;
+}
+
+.kargo-sayaci-preview__content {
+    overflow: hidden;
+    border: 1px solid var(--kargo-border);
+    border-radius: 8px;
+    background: var(--kargo-card-bg);
+    box-shadow: 0 8px 20px rgba(198, 98, 63, 0.12);
+}
+
+.kargo-sayaci-preview__lead {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-height: 38px;
+    padding: 10px 14px;
+    border-bottom: 1px solid color-mix(in srgb, var(--kargo-border) 22%, transparent);
+    background: var(--kargo-card-bg);
+    color: var(--kargo-text);
+}
+
+.kargo-sayaci-preview__icon {
+    width: 18px;
+    height: 18px;
+    flex: 0 0 auto;
+    color: var(--kargo-bg);
+    background: currentColor;
+    clip-path: polygon(5% 36%, 55% 36%, 55% 70%, 66% 70%, 66% 48%, 82% 48%, 96% 62%, 96% 70%, 88% 70%, 84% 84%, 72% 84%, 68% 70%, 33% 70%, 29% 84%, 17% 84%, 13% 70%, 5% 70%);
+}
+
+.kargo-sayaci-preview__text {
+    color: var(--kargo-text);
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.28;
+}
+
+.kargo-sayaci-preview__text strong {
+    color: var(--kargo-accent);
+    font-weight: 800;
+}
+
+.kargo-sayaci-preview__body {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 12px 14px;
+    background: var(--kargo-body-bg);
+}
+
+.kargo-sayaci-preview__brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 92px;
+    min-width: 92px;
+    height: 38px;
+    padding: 6px 8px;
+    border: 1px solid color-mix(in srgb, var(--kargo-border) 18%, transparent);
+    border-radius: 6px;
+    background: var(--kargo-logo-bg);
+    box-sizing: border-box;
+}
+
+.kargo-sayaci-preview__brand img {
+    display: block;
+    width: 100%;
+    max-height: 26px;
+    object-fit: contain;
+}
+
+.kargo-sayaci-preview__delivery {
+    display: flex;
+    align-items: center;
+    color: var(--kargo-text);
+}
+
+.kargo-sayaci-preview__delivery-title {
+    display: block;
+    color: var(--kargo-delivery-label);
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.kargo-sayaci-preview__delivery strong {
+    display: block;
+    color: var(--kargo-delivery-value);
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.kargo-sayaci-preview__today {
+    color: var(--kargo-today);
+    font-weight: 900;
+}
+
+@media (max-width: 782px) {
+    .kargo-sayaci-admin__header {
+        align-items: flex-start;
+    }
+
+    .kargo-sayaci-admin__header h1 {
+        flex-wrap: wrap;
+    }
+
+    .kargo-sayaci-admin__table input[type="time"],
+    .kargo-sayaci-admin__table input[type="date"],
+    .kargo-sayaci-admin__table .regular-text {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .kargo-sayaci-preview__body {
+        gap: 10px;
+    }
+}
